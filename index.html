@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <title>Happy Birthday Ankithhhhh 🎉</title>
+  <link rel="stylesheet" href="bday.css">
+</head>
+<body>
+<div class="balloons"></div>
+
+
+
+<script src="script.js"></script>
+
+  <div class="container">
+    <h1 class="title">🎂 Happy Birthday  Ankithhhh🎂</h1>
+    <h2 class="name"><span id="friendName">Happiest bday from my side</span> 💙</h2>
+
+    <p class="msg">
+    I'm really lucky to have u in my life, may ur life always is fulfilled with laughs, happiness and whateve else u want
+    ✨
+    Enjoy your day, have a lot of fun, cake and party 
+ 
+    </p>
+    
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+  
+    <button onclick="surprise()">Click for Surprise 🎁</button>
+
+    <p id="surpriseText"></p>
+  </div>
+
+  
+  
+<audio id="bgMusic" loop>
+  <source src="c:\Users\TUF GAMING\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\E0E8F00A11F47E7E5C94C6D7F1F86703D8C2E5B8\transfers\2026-05\WhatsApp Audio 2026-02-03 at 8.29.55 PM.mpeg" type="audio/mpeg">
+</audio>
+<button onclick="toggleMusic()">🔊 Music</button>
+<script>
+function surprise() {
+  const text =
+`🎉 You are awesome! Stay happy, stay crazy & never change 😎💫
+
+— From Rabia 💙
+
+Happy Birthday! You are not old… you are vintage 😌✨
+
+God be like: Chal isko thoda alag bana dete hain 😂`;
+
+  const el = document.getElementById("surpriseText");
+  el.innerHTML = "";
+  let i = 0;
+
+  const typing = setInterval(() => {
+    el.innerHTML += text.charAt(i);
+    i++;
+    if (i === text.length) {
+      clearInterval(typing);
+    }
+  }, 40);
+}
+</script>
+</body>
+</html>
